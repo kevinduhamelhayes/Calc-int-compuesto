@@ -24,7 +24,7 @@ export function ResultsChart({ results }: ResultsChartProps) {
   const chartColors = {
     total: "hsl(221, 83%, 53%)", // Bright blue
     contributions: "hsl(142, 76%, 36%)", // Rich green
-    interest: "hsl(291, 64%, 42%)" // Deep purple
+    interest: "hsl(0, 84%, 60%)" // Bright red
   }
 
   return (
@@ -42,7 +42,7 @@ export function ResultsChart({ results }: ResultsChartProps) {
             <p className="text-sm font-medium text-muted-foreground">Total Contributions</p>
             <p className="text-2xl font-bold" style={{ color: chartColors.contributions }}>{formatCurrency(results.totalContributions)}</p>
           </div>
-          <div className="space-y-2 p-4 bg-purple-500/10 dark:bg-purple-500/20 rounded-lg border border-purple-200 dark:border-purple-800">
+          <div className="space-y-2 p-4 bg-red-500/10 dark:bg-red-500/20 rounded-lg border border-red-200 dark:border-red-800">
             <p className="text-sm font-medium text-muted-foreground">Total Interest Earned</p>
             <p className="text-2xl font-bold" style={{ color: chartColors.interest }}>{formatCurrency(results.totalInterest)}</p>
           </div>
