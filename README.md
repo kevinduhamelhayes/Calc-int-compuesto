@@ -2,7 +2,9 @@
 
 A modern, interactive compound interest calculator built with React, TypeScript, and Shadcn UI. This tool helps you visualize how your investments can grow over time with the power of compound interest.
 
-![Calculator Screenshot](https://via.placeholder.com/800x450/4F46E5/FFFFFF?text=Compound+Interest+Calculator)
+<div align="center">
+  <img src="public/images/calculator-light.png" alt="Calculator in Light Mode" width="800"/>
+</div>
 
 ## Features
 
@@ -14,6 +16,21 @@ A modern, interactive compound interest calculator built with React, TypeScript,
   - Detailed breakdown of contributions vs. interest
 - **Dark Mode**: Toggle between light and dark themes for comfortable viewing
 - **TypeScript**: Type-safe codebase for better maintainability
+
+### Light and Dark Mode
+
+<div align="center">
+  <img src="public/images/calculator-results-light.png" alt="Results in Light Mode" width="400"/>
+  <img src="public/images/calculator-results-dark.png" alt="Results in Dark Mode" width="400"/>
+</div>
+
+### Responsive Design
+
+The calculator adapts to different screen sizes and provides a consistent experience across devices.
+
+<div align="center">
+  <img src="public/images/calculator-small-investment.png" alt="Small Investment Example" width="600"/>
+</div>
 
 ## Demo
 
