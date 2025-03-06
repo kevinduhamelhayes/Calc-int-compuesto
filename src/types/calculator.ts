@@ -3,6 +3,8 @@ export interface CalculatorFormValues {
   contribution: number
   years: number
   rate: number
+  contributionFrequency: 'monthly' | 'quarterly' | 'annually'
+  inflation: number
 }
 
 export interface CalculatorResult {
