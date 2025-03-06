@@ -22,9 +22,9 @@ export function ResultsChart({ results }: ResultsChartProps) {
   if (!results) return null
 
   const chartColors = {
-    total: "hsl(var(--primary))",
-    contributions: "hsl(var(--secondary))",
-    interest: "hsl(var(--accent))"
+    total: "hsl(221, 83%, 53%)", // Bright blue
+    contributions: "hsl(142, 76%, 36%)", // Rich green
+    interest: "hsl(291, 64%, 42%)" // Deep purple
   }
 
   return (
@@ -34,17 +34,17 @@ export function ResultsChart({ results }: ResultsChartProps) {
           <CardTitle>Investment Summary</CardTitle>
         </CardHeader>
         <CardContent className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-          <div className="space-y-2 p-4 bg-muted/50 rounded-lg">
+          <div className="space-y-2 p-4 bg-blue-500/10 dark:bg-blue-500/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <p className="text-sm font-medium text-muted-foreground">Total Value</p>
-            <p className="text-2xl font-bold text-primary">{formatCurrency(results.total)}</p>
+            <p className="text-2xl font-bold" style={{ color: chartColors.total }}>{formatCurrency(results.total)}</p>
           </div>
-          <div className="space-y-2 p-4 bg-muted/50 rounded-lg">
+          <div className="space-y-2 p-4 bg-green-500/10 dark:bg-green-500/20 rounded-lg border border-green-200 dark:border-green-800">
             <p className="text-sm font-medium text-muted-foreground">Total Contributions</p>
-            <p className="text-2xl font-bold text-secondary">{formatCurrency(results.totalContributions)}</p>
+            <p className="text-2xl font-bold" style={{ color: chartColors.contributions }}>{formatCurrency(results.totalContributions)}</p>
           </div>
-          <div className="space-y-2 p-4 bg-muted/50 rounded-lg">
+          <div className="space-y-2 p-4 bg-purple-500/10 dark:bg-purple-500/20 rounded-lg border border-purple-200 dark:border-purple-800">
             <p className="text-sm font-medium text-muted-foreground">Total Interest Earned</p>
-            <p className="text-2xl font-bold text-accent">{formatCurrency(results.totalInterest)}</p>
+            <p className="text-2xl font-bold" style={{ color: chartColors.interest }}>{formatCurrency(results.totalInterest)}</p>
           </div>
         </CardContent>
       </Card>
