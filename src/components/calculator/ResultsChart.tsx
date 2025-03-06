@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CalculatorResult } from "@/types/calculator"
-import { formatCurrency } from "@/lib/utils"
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
+import { CalculatorResult } from "../../types/calculator"
+import { formatCurrency } from "../../lib/utils"
 import {
   AreaChart,
   Area,

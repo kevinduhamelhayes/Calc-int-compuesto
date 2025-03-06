@@ -1,21 +1,21 @@
 import { useState } from "react"
 import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as Yup from "yup"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
-import { calculateCompoundInterest } from "@/lib/utils"
-import type { CalculatorFormValues, CalculatorResult } from "@/types/calculator"
-import { ResultsChart } from "@/components/calculator/ResultsChart"
-import { ModeToggle } from "@/components/theme/mode-toggle"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card"
+import { Input } from "./components/ui/input"
+import { Label } from "./components/ui/label"
+import { Button } from "./components/ui/button"
+import { calculateCompoundInterest } from "./lib/utils"
+import type { CalculatorFormValues, CalculatorResult } from "./types/calculator"
+import { ResultsChart } from "./components/calculator/ResultsChart"
+import { ModeToggle } from "./components/theme/mode-toggle"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "./components/ui/select"
 
 function App() {
   const [calculatorResults, setCalculatorResults] = useState<CalculatorResult | null>(null)

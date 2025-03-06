@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
-import type { CalculatorResult, YearlyData } from "@/types/calculator"
+import type { CalculatorResult, YearlyData } from "../types/calculator"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -52,4 +52,4 @@ export const calculateCompoundInterest = (
     totalInterest: Math.round(total - totalContributions),
     yearlyData
   }
-} 
+}
