@@ -34,9 +34,9 @@ export const calculateCompoundInterest = (
     totalContributions += yearContribution
     
     // Calculate interest for this year
-    const startBalance = total
+    // const startBalance = total
     total = (total + yearContribution) * (1 + rate / 100)
-    const interestEarned = total - startBalance - yearContribution
+    // const interestEarned = total - startBalance - yearContribution
     
     yearlyData.push({
       year: i + 1,
