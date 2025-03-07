@@ -17,11 +17,33 @@ A modern, interactive compound interest calculator built with React, TypeScript,
 - **Dark Mode**: Toggle between light and dark themes for comfortable viewing
 - **TypeScript**: Type-safe codebase for better maintainability
 
-### Light and Dark Mode
+### Form Inputs
+
+<div align="center">
+  <img src="public/images/form-inputs.png" alt="Calculator Form Inputs" width="600"/>
+</div>
+
+### Investment Summary
 
 <div align="center">
   <img src="public/images/investment-summary-light.png" alt="Investment Summary - Light Mode" width="400"/>
   <img src="public/images/investment-summary-dark.png" alt="Investment Summary - Dark Mode" width="400"/>
+</div>
+
+### Growth Charts
+
+#### Area Chart Visualization
+
+<div align="center">
+  <img src="public/images/chart-area-light.png" alt="Area Chart - Light Mode" width="400"/>
+  <img src="public/images/chart-area-dark.png" alt="Area Chart - Dark Mode" width="400"/>
+</div>
+
+#### Bar Chart Visualization
+
+<div align="center">
+  <img src="public/images/chart-bar-light.png" alt="Bar Chart - Light Mode" width="400"/>
+  <img src="public/images/chart-bar-dark.png" alt="Bar Chart - Dark Mode" width="400"/>
 </div>
 
 ### Responsive Design
